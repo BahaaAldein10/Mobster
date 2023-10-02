@@ -24,9 +24,9 @@ function Pricing() {
             <div>
               <h1 className="text-2 text-black">Pricing Plan</h1>
               <h2 className="mt-4 text-1 text-black">
-                Invest in the future of your business with our app's pricing
-                plans. They enable you to streamline operations, boost
-                efficiency, and gain a competitive edge.
+                Invest in the future of your business with our app's&apos;
+                pricing plans. They enable you to streamline operations, &apos;
+                boost efficiency, and gain a competitive edge.
               </h2>
             </div>
 
