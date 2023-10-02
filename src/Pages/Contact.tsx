@@ -88,7 +88,7 @@ function Contact() {
               </h2>
             </div>
 
-            <Image src="/contact_image.png" alt="contact_image" />
+            <Image src="/contact_image.png" alt="contact_image" width={400} height={400} />
           </motion.div>
         </div>
       </div>
