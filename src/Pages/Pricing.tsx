@@ -55,8 +55,11 @@ function Pricing() {
               <h1 className="mt-4 text-1.5 text-color">{item.title}</h1>
               <h2 className="text-2 text-b">{item.price}</h2>
               <ul className="mt-4">
-                {item.features.map((item) => (
-                  <li className="flex items-center gap-2 py-2">
+                {item.features.map((item, index) => (
+                  <li
+                    key={`item-${index}`}
+                    className="flex items-center gap-2 py-2"
+                  >
                     <Image
                       src="/tick.png"
                       alt="tick"

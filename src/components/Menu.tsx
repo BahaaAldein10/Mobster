@@ -20,8 +20,8 @@ export default function Menu({ handleClick }: props) {
       >
         <div className="container flex justify-center items-center mt-20 w-full">
           <ul className="block text-center">
-            {links.map((link) => (
-              <li className="p-4 text-white">
+            {links.map((link, index) => (
+              <li key={`link-${index}`} className="p-4 text-white">
                 <a
                   href={link.url}
                   className="relative p-2 text-[1.5rem] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-white before:rounded-2xl hover:before:w-full before:duration-300"
