@@ -1,7 +1,8 @@
 "use client";
 
-import Button from "@/components/Button";
+import Image from "next/image";
 import Title from "@/components/Title";
+import Button from "@/components/Button";
 import { features } from "@/constants";
 import { motion } from "framer-motion";
 
@@ -27,7 +28,7 @@ function Features() {
               }}
               className="p-8 bg-white box_shadow rounded-2xl"
             >
-              <img src={item.image} alt={item.title} className="m-auto" />
+              <Image src={item.image} alt={item.title} className="m-auto" />
               <h1 className="mt-4 text-1.5 text-color">{item.title}</h1>
               <h2 className="text-1 text-black">{item.description}</h2>
             </motion.div>
