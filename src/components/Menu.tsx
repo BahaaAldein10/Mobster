@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { menuSlide } from "@/utils/motion";
 import { links } from "@/constants";
 import Curve from "./Curve";
+import Image from "next/image";
 
 interface props {
   handleClick: () => void;
@@ -33,9 +34,12 @@ export default function Menu({ handleClick }: props) {
           </ul>
         </div>
 
-        <img
+        <Image
           src="/close.png"
-          className="absolute top-8 right-8 w-6 cursor-pointer"
+          alt="close"
+          width={24}
+          height={24}
+          className="absolute top-8 right-8 cursor-pointer"
           onClick={handleClick}
         />
 

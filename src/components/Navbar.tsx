@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import { links } from "@/constants";
 import { navVariants } from "@/utils/motion";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -28,7 +29,7 @@ function Navbar() {
     >
       {/* Logo */}
       <Link href={"/"} className="flex items-center gap-2">
-        <img src="/logo.png" alt="logo" className="w-10" />
+        <Image src="/logo.png" alt="logo" width={40} height={40} />
         <h1 className="text-2 text-color">Mobster</h1>
       </Link>
 
@@ -48,7 +49,7 @@ function Navbar() {
 
       {/* Menu */}
       <div onClick={handleMenu} className="lg:hidden block cursor-pointer">
-        <img src="/menu.png" alt="menu" className="w-10" />
+        <Image src="/menu.png" alt="menu" width={40} height={40} />
       </div>
 
       <AnimatePresence mode="wait">

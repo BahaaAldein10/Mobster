@@ -28,7 +28,13 @@ function Features() {
               }}
               className="p-8 bg-white box_shadow rounded-2xl"
             >
-              <Image src={item.image} alt={item.title} className="m-auto" />
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={150}
+                height={150}
+                className="m-auto"
+              />
               <h1 className="mt-4 text-1.5 text-color">{item.title}</h1>
               <h2 className="text-1 text-black">{item.description}</h2>
             </motion.div>

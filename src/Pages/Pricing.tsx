@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import { motion } from "framer-motion";
 import Title from "@/components/Title";
 import { pricing } from "@/constants";
+import Image from "next/image";
 
 function Pricing() {
   return (
@@ -29,9 +30,11 @@ function Pricing() {
               </h2>
             </div>
 
-            <img
+            <Image
               src="/pricing_hero.png"
               alt="pricing_hero"
+              width={400}
+              height={400}
               className="lg:block hidden"
             />
           </motion.div>
@@ -54,7 +57,13 @@ function Pricing() {
               <ul className="mt-4">
                 {item.features.map((item) => (
                   <li className="flex items-center gap-2 py-2">
-                    <img src="/tick.png" alt="tick" className="w-6 h-6" />
+                    <Image
+                      src="/tick.png"
+                      alt="tick"
+                      width={24}
+                      height={24}
+                      className="w-6 h-6"
+                    />
                     <h1 className="text-1">{item}</h1>
                   </li>
                 ))}
