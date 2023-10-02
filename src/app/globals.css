@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-weight: 600;
+}
+
+body {
+  color: #000000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+.box_shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.glow_shadow:hover {
+  box-shadow: 0 0 20px indigo, 0 0 40px indigo;
+}
