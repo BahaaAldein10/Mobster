@@ -1,10 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Button from "@/components/Button";
 import Title from "@/components/Title";
-import { contacts } from "@/constants";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 function Contact() {
   return (
@@ -89,7 +88,7 @@ function Contact() {
               </h2>
             </div>
 
-            <img src="/contact_image.png" alt="contact_image" />
+            <Image src="/contact_image.png" alt="contact_image" />
           </motion.div>
         </div>
       </div>
