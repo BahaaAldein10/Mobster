@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Title from "@/components/Title";
 import { motion } from "framer-motion";
-
+//
 function Contact() {
   return (
     <section className="relative mt-8 w-full md:h-screen" id="contact">
