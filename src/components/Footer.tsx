@@ -1,6 +1,7 @@
 import { links, socials } from "@/constants";
 import Link from "next/link";
 import Button from "./Button";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -10,7 +11,7 @@ function Footer() {
           <div>
             {/* Logo */}
             <Link href={"/"} className="flex items-center gap-2">
-              <img src="/logo2.png" alt="logo" className="w-10" />
+              <Image src="/logo2.png" alt="logo" width={40} height={40} />
               <h1 className="text-2 text-white">Mobster</h1>
             </Link>
 
@@ -22,7 +23,12 @@ function Footer() {
                   href="/"
                   className="p-2 bg-white rounded-full cursor-pointer glow_shadow duration-300"
                 >
-                  <img src={item.img} alt={item.name} className="w-6" />
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    width={24}
+                    height={24}
+                  />
                 </Link>
               ))}
             </ul>
@@ -34,7 +40,7 @@ function Footer() {
               {links.map((link, index) => (
                 <li key={`link-${index}`} className="py-2 w-fit">
                   <Link href={link.url} className="flex items-center gap-2">
-                    <img src="/arrow.png" alt="arrow" className="w-4" />
+                    <Image src="/arrow.png" alt="arrow" width={16} height={16} />
                     <h1 className="text-1 text-white hover:text-color duration-300">
                       {link.title}
                     </h1>
